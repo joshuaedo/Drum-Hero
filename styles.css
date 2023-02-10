@@ -5,19 +5,18 @@ body {
 
 h1 {
   font-size: 5rem;
-  color: #DBEDF3;
+  color: #dbedf3;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
-
+  text-shadow: 3px 0 #da0463;
 }
 
 footer {
-  color: #DBEDF3;
+  color: #dbedf3;
   font-family: sans-serif;
 }
 
 .j {
-background-image: url(./images/crash.png);
+  background-image: url(./images/crash.png);
 }
 
 .k {
@@ -45,7 +44,7 @@ background-image: url(./images/crash.png);
 }
 
 .set {
-  margin: 10% auto;
+  margin-top: 8rem;
 }
 
 .game-over {
@@ -54,7 +53,7 @@ background-image: url(./images/crash.png);
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
+  box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
 }
 
@@ -64,18 +63,30 @@ background-image: url(./images/crash.png);
 
 .drum {
   outline: none;
-  border: 10px solid #404B69;
+  border: 10px solid #404b69;
   font-size: 5rem;
-  font-family: 'Arvo', cursive;
+  font-family: "Arvo", cursive;
   line-height: 2;
   font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
+  color: #da0463;
+  text-shadow: 0.1875rem 0 #dbedf3;
+  border-radius: 0.9375rem;
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
   text-align: center;
-  margin: 10px;
+  margin: 0.625rem;
   background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .drum {
+    font-size: 2rem;
+    width: 4.375rem;
+    height: 4.375rem;
+    margin: 0.225rem;
+  }
 }
